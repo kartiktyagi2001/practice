@@ -1,0 +1,15 @@
+run docker
+
+then download image of postgres
+
+then create db using this -> docker run --name postgres -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres
+
+then form a connection string -> postgresql://postgres:password@localhost:5432/postgres
+
+then either choose psql or pg library to interact with db
+
+    -> psql : docker exec -it 9d811cc0a4ed(container) /bin/bash (this gives access to container which has psql)
+
+    then psql -h localhost -d postgres -U postgres (enables psql) (\q to exit)
+
+    -> pg library;
