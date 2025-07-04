@@ -1,0 +1,3 @@
+run command -> npx prisma migrate dev --name Name of Migration (this will create a migrations(multiple) which i an sql file) 
+
+generate clients to access or pricisely update the db via client -> prisma generate
